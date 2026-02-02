@@ -1,0 +1,15 @@
+name: fastp_qc_long
+channels:
+  - conda-forge
+  - bioconda
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=2_gnu
+  - fastplong=0.2.2=heae3180_0
+  - isa-l=2.31.1=hb9d3cd8_1
+  - libdeflate=1.22=hb9d3cd8_0
+  - libgcc=15.1.0=h767d61c_2
+  - libgomp=15.1.0=h767d61c_2
+  - libstdcxx=15.1.0=h8f9b012_2

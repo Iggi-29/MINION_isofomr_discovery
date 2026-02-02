@@ -1,0 +1,5 @@
+21646P	BRCA2	barcode21.LRS8	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS8_LRS8_barcode21/LRS8_LRS8_barcode21.fastq.gz
+27297P	PALB2	barcode22.LRS8	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS8_LRS8_barcode22/LRS8_LRS8_barcode22.fastq.gz
+31872P	RAD51C	barcode23.LRS8	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS8_LRS8_barcode23/LRS8_LRS8_barcode23.fastq.gz
+18784P	CHEK2	barcode24.LRS8	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS8_LRS8_barcode24/LRS8_LRS8_barcode24.fastq.gz
+38056P	APC	barcode01.LRS8	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS8_LRS8_barcode01/LRS8_LRS8_barcode01.fastq.gz

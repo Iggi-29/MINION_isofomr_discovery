@@ -1,0 +1,4 @@
+barcode04	barcode04	barcode04.RUN1	/imppc/labs/eclab/ijarne/0_Recerca/6_Run1/concatenated_fastq_files/Run_17112025_barcode04/Run_17112025_barcode04.fastq.gz
+barcode06	barcode06	barcode06.RUN1	/imppc/labs/eclab/ijarne/0_Recerca/6_Run1/concatenated_fastq_files/Run_17112025_barcode06/Run_17112025_barcode06.fastq.gz
+barcode09	barcode09	barcode07.RUN1	/imppc/labs/eclab/ijarne/0_Recerca/6_Run1/concatenated_fastq_files/Run_17112025_barcode09/Run_17112025_barcode09.fastq.gz
+barcode10	barcode10	barcode10.RUN1	/imppc/labs/eclab/ijarne/0_Recerca/6_Run1/concatenated_fastq_files/Run_17112025_barcode10/Run_17112025_barcode10.fastq.gz

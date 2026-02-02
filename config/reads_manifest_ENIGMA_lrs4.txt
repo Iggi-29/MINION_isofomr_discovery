@@ -1,0 +1,4 @@
+20099P	APC	barcode01.LRS4	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS4_LRS4_barcode01/LRS4_LRS4_barcode01.fastq.gz
+20099NP	APC	barcode02.LRS4	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS4_LRS4_barcode02/LRS4_LRS4_barcode02.fastq.gz
+10919P	control	barcode03.LRS4	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS4_LRS4_barcode03/LRS4_LRS4_barcode03.fastq.gz
+10933P	control	barcode04.LRS4	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS4_LRS4_barcode04/LRS4_LRS4_barcode04.fastq.gz

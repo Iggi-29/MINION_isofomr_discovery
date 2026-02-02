@@ -1,0 +1,5 @@
+27854P	BRCA1	barcode05.LRS5	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS5_LRS5_barcode05/LRS5_LRS5_barcode05.fastq.gz
+33698P	PMS2	barcode06.LRS5	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS5_LRS5_barcode06/LRS5_LRS5_barcode06.fastq.gz
+23665P	ATM	barcode07.LRS5	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS5_LRS5_barcode07/LRS5_LRS5_barcode07.fastq.gz
+43802P	control	barcode08.LRS5	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS5_LRS5_barcode08/LRS5_LRS5_barcode08.fastq.gz
+15151P	control	barcode09.LRS5	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS5_LRS5_barcode09/LRS5_LRS5_barcode09.fastq.gz

@@ -1,0 +1,5 @@
+9911P	RAD51C	barcode11.LRS6	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS6_LRS6_barcode11/LRS6_LRS6_barcode11.fastq.gz
+13498P	BRCA1	barcode12.LRS6	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS6_LRS6_barcode12/LRS6_LRS6_barcode12.fastq.gz
+27557P	ATM	barcode13.LRS6	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS6_LRS6_barcode13/LRS6_LRS6_barcode13.fastq.gz
+39950P	TP53	barcode14.LRS6	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS6_LRS6_barcode14/LRS6_LRS6_barcode14.fastq.gz
+43966P	control	barcode15.LRS6	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS6_LRS6_barcode15/LRS6_LRS6_barcode15.fastq.gz

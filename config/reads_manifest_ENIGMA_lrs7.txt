@@ -1,0 +1,5 @@
+28871P	MSH6	barcode16.LRS7	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS7_LRS7_barcode16/LRS7_LRS7_barcode16.fastq.gz
+30473P	MLH1	barcode17.LRS7	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS7_LRS7_barcode17/LRS7_LRS7_barcode17.fastq.gz
+20749P	RAD51C	barcode18.LRS7	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS7_LRS7_barcode18/LRS7_LRS7_barcode18.fastq.gz
+21189P	APC	barcode19.LRS7	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS7_LRS7_barcode19/LRS7_LRS7_barcode19.fastq.gz
+44507P	control	barcode20.LRS7	/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/concatenated_fastq_files/LRS7_LRS7_barcode20/LRS7_LRS7_barcode20.fastq.gz

@@ -69,7 +69,7 @@ colors = config["colors"]
 
 #### Include the rules of the analysis
 include: "Prepare_data.smk"
-# include: "File_concatenation.smk"
+include: "File_concatenation.smk"
 include: "QC_report_generation.smk"
 include: "Transcriptome_Alignment.smk"
 include: "flair.smk"
@@ -78,10 +78,10 @@ include: "flame.smk"
 ### rules
 rule all:
     input:
-        # rules.trigger_file_concatenation.input,
-        # rules.trigger_prepare_data.input,
-        # rules.trigger_QC.input,
-        # rules.trigger_transcriptome_align.input,
+        rules.trigger_file_concatenation.input,
+        rules.trigger_prepare_data.input,
+        rules.trigger_QC.input,
+        rules.trigger_transcriptome_align.input,
         rules.trigger_flame.input,
         # rules.trigger_flair.input
 

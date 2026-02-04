@@ -71,3 +71,8 @@ rule trigger_flame:
     input:
         expand(base_path + "/results/flame/{sample}/FLAME_done.txt",
         base_path = base_path, sample = samples),
+        # expand(base_path + "/results/flame/{sample}_sorted.bam",
+        # base_path = base_path, sample = samples),
+        # expand(base_path + "/results/flame/{sample}_sorted.bam.bai",
+        # base_path = base_path, sample = samples)
+

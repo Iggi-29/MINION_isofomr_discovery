@@ -1,0 +1,200 @@
+##########################################
+### Configuration for MINION pipelines ###
+##########################################
+
+###############################
+### Run depending variables ###
+###############################
+### base_path
+# base_path: "/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA" ## ENIGMA
+# base_path: "/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2" ## ENIGMA
+base_path: "/imppc/labs/eclab/ijarne/0_Recerca/6_Run11" # Run1 nostra
+# base_path: "/imppc/labs/eclab/ijarne/0_Recerca/6_Run2" ## Run2 nostra
+### input_files_folder
+# input_files_folder: "/imppc/labs/eclab/Raw_Data/MINION_IGNASI/AA_final_place" ## Old version
+input_files_folder: "/imppc/labs/eclab/Raw_Data/MinION/Run_17112025" ## Run1 nostra
+# input_files_folder: "/imppc/labs/eclab/Raw_Data/MINION_IGNASI/Run2_14012026/no_sample_id/20260114_1249_MC-114182_FBE54097_668d5d39/fastq_pass" ## Run2 nostra
+### snake_files 
+# snake_files: "/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA/snake_files" ## ENIGMA 
+# snake_files: "/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/snake_files" ## ENIGMA 
+snake_files: "/imppc/labs/eclab/ijarne/0_Recerca/6_Run1/snake_files" ## Run1 nostra
+# snake_files: "/imppc/labs/eclab/ijarne/0_Recerca/6_Run2/snake_files" ## Run2 nostra 
+
+### Genes to work on
+genes_to_work_on: ## OUR GENES
+  - PKD1
+  - PKD2
+  - LZTR1
+  - NF1
+  - NF2
+  - SMARCE1
+  - SMARCB1
+  - TSC1
+  - TSC2
+  - SPRED1
+  - DMRT1
+  - COL4A3
+  - COL4A4
+  - COL4A5
+  - MUC1
+genes_to_work_on_ensembl: ## OUR GENES
+  - ENSG00000008710
+  - ENSG00000118762
+  - ENSG00000099949
+  - ENSG00000196712
+  - ENSG00000186575
+  - ENSG00000073584
+  - ENSG00000099956
+  - ENSG00000165699
+  - ENSG00000103197
+  - ENSG00000166068
+  - ENSG00000137090
+  - ENSG00000169031
+  - ENSG00000081052
+  - ENSG00000188153
+  - ENSG00000185499
+genes_to_filter: /imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/config/keep_this.txt ## OUR GENES
+
+# genes_to_work_on: ## ENIGMA GENES
+#   - ATM
+#   - APC
+#   - BRCA1
+#   - BRCA2
+#   - BRIP1
+#   - CHEK2
+#   - PMS1
+#   - MSH6
+#   - MUTYH
+#   - PALB2
+#   - PMS2
+#   - RAD51C
+#   - RAD51D
+#   - TP53
+# genes_to_work_on_ensembl: ## ENIGMA GENES
+#   - ENSG00000149311
+#   - ENSG00000134982
+#   - ENSG00000012048
+#   - ENSG00000139618
+#   - ENSG00000136492
+#   - ENSG00000183765
+#   - ENSG00000064933
+#   - ENSG00000116062
+#   - ENSG00000132781
+#   - ENSG00000083093
+#   - ENSG00000122512
+#   - ENSG00000108384
+#   - ENSG00000185379
+#   - ENSG00000141510
+# genes_to_filter: /imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/config/keep_this_ENIGMA.txt ## ENIGMA GENES
+
+### Samples
+samples:
+  - barcode04
+  - barcode06
+  - barcode09
+  - barcode10
+  # - barcode11
+  # - barcode13
+  # - barcode14
+  # - barcode15
+  # - LRS4_LRS4_barcode01
+  # - LRS4_LRS4_barcode02
+  # - LRS4_LRS4_barcode03
+  # - LRS4_LRS4_barcode04
+  # - LRS5_LRS5_barcode05
+  # - LRS5_LRS5_barcode06
+  # - LRS5_LRS5_barcode07
+  # - LRS5_LRS5_barcode08
+  # - LRS5_LRS5_barcode09
+  # - LRS6_LRS6_barcode11
+  # - LRS6_LRS6_barcode12
+  # - LRS6_LRS6_barcode13
+  # - LRS6_LRS6_barcode14
+  # - LRS6_LRS6_barcode15
+  # - LRS7_LRS7_barcode16
+  # - LRS7_LRS7_barcode17
+  # - LRS7_LRS7_barcode18
+  # - LRS7_LRS7_barcode19
+  # - LRS7_LRS7_barcode20
+  # - LRS8_LRS8_barcode01
+  # - LRS8_LRS8_barcode21
+  # - LRS8_LRS8_barcode22
+  # - LRS8_LRS8_barcode23
+  # - LRS8_LRS8_barcode24
+
+##########################
+### Constant variables ###
+##########################
+### Tanscripts annotations and genome
+genome: "/imppc/labs/eclab/Resources/MINION_ddbb/Ref_files/GRCh38.primary_assembly.genome.fa"
+transcriptome: "/imppc/labs/eclab/Resources/MINION_ddbb/Ref_files/gencode.v46.transcripts.fa"
+gtf_annotation: "/imppc/labs/eclab/Resources/MINION_ddbb/Ref_files/gencode.v46.chr_patch_hapl_scaff.basic.annotation.gtf"
+gff3_annotation: "/imppc/labs/eclab/Resources/MINION_ddbb/Ref_files/gencode.v46.chr_patch_hapl_scaff.basic.annotation.gff3"
+
+### Script places
+scriptsR: "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/scriptsR"
+flame_script: "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION2/scripts/FLAME"
+flame_config: "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION2/config/FLAME_config.json"
+colors: /imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/config/colors.txt ## FOR FLAIR
+
+### Envs and sing images
+## Anaconda Environments
+anaconda_envs:
+  AGAT_anaconda: "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/envs/AGAT.yaml"
+  sequinR_anaconda: "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/envs/sequinR.yaml"
+  fastpqc_env: "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/envs/fastp_qc.yaml"
+  bamslam_env: "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/envs/g_alignments.yaml"
+  flair_env: "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/envs/flair.yaml"
+  flair_env2: "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/envs/flair2.yaml"
+  flame_env: "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/envs/FLAME.yaml"
+  readr_env: "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/envs/readr.yaml"
+  biomart_env: "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/envs/biomart.yaml"
+
+## Singularity images
+singularity_imgs:
+  minimap2_img: "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/sing_images/minimap2_2.30.sif"
+  samtools_img: "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/sing_images/samtools_v1.7.0_cv4.sif"
+  fastqc_image: "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/sing_images/fastqc_v0.11.9_cv8.sif"
+  multiqc_image: "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/sing_images/multiqc_v1.31.sif"
+
+#############
+### FLAIR ### <- This part will may be removed </3
+#############
+### Manifest file - FLAIR files
+manifest_file: "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/config/reads_manifest_ENIGMA.txt"
+manifest_file_lrs4: "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/config/reads_manifest_ENIGMA_lrs4.txt"
+manifest_file_lrs5: "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/config/reads_manifest_ENIGMA_lrs5.txt"
+manifest_file_lrs6: "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/config/reads_manifest_ENIGMA_lrs6.txt"
+manifest_file_lrs7: "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/config/reads_manifest_ENIGMA_lrs7.txt"
+manifest_file_lrs8: "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/config/reads_manifest_ENIGMA_lrs8.txt"
+manifest_file_lrs1: "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/config/reads_manifest_RUN1.txt"
+
+samples_lrs4:
+  - LRS4_LRS4_barcode01
+  - LRS4_LRS4_barcode02
+  - LRS4_LRS4_barcode03
+  - LRS4_LRS4_barcode04
+samples_lrs5:
+  - LRS5_LRS5_barcode05
+  - LRS5_LRS5_barcode06
+  - LRS5_LRS5_barcode07
+  - LRS5_LRS5_barcode08
+  - LRS5_LRS5_barcode09
+samples_lrs6:
+  - LRS6_LRS6_barcode11
+  - LRS6_LRS6_barcode12
+  - LRS6_LRS6_barcode13
+  - LRS6_LRS6_barcode14
+  - LRS6_LRS6_barcode15
+samples_lrs7:
+  - LRS7_LRS7_barcode16
+  - LRS7_LRS7_barcode17
+  - LRS7_LRS7_barcode18
+  - LRS7_LRS7_barcode19
+  - LRS7_LRS7_barcode20
+samples_lrs8:
+  - LRS8_LRS8_barcode01
+  - LRS8_LRS8_barcode21
+  - LRS8_LRS8_barcode22
+  - LRS8_LRS8_barcode23
+  - LRS8_LRS8_barcode24

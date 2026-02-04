@@ -11,22 +11,22 @@ library(IRanges)
 
 #### Constants
 ### save the data here
-place_to_save_the_data <- "/imppc/labs/eclab/ijarne/0_Recerca/6_Run2/results/flame/"
+place_to_save_the_data <- "/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/results/flame/"
 ### base path for flame results
-flame_base_path_results <- "/imppc/labs/eclab/ijarne/0_Recerca/6_Run2/results/flame/" ## here they are the same but it could be different
+flame_base_path_results <- "/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/results/flame/" ## here they are the same but it could be different
 ### annotation of the genes
 raw_annotation_gft_file <- "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/gff3_annotations_for_igv/gff3_filtered.gff3" ## MANE!
-raw_annotation_gft_file <- "/imppc/labs/eclab/ijarne/0_Recerca/6_Run2/ref_files/filtered.gff3"
+raw_annotation_gft_file <- "/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/ref_files/filtered_MANE.gff3"
 ### genes to work on
-genes_to_work_on <- "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/config/keep_this.txt"
+genes_to_work_on <- "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/config/keep_this_ENIGMA.txt"
 ### matching final df
-matching_final_df <- "/imppc/labs/eclab/ijarne/0_Recerca/6_Run2/results/flame/final/matching_to_annotate.txt"
+matching_final_df <- "/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/results/flame/final_select/matching_to_annotate.txt"
 ### raw annotation gtf
-annotation_of_trans_gtf <- "/imppc/labs/eclab/ijarne/0_Recerca/6_Run2/results/flame/final/annotation_of_transcripts.xlsx"
+annotation_of_trans_gtf <- "/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/results/flame/final_select//annotation_of_transcripts.xlsx"
 ### output file exon
-output_file_exon <- "/imppc/labs/eclab/ijarne/0_Recerca/6_Run2/results/flame/final/matched_exon_data"
+output_file_exon <- "/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/results/flame/final_select/matched_exon_data"
 ### output file genes and trans
-output_file_genes_and_trans <- "/imppc/labs/eclab/ijarne/0_Recerca/6_Run2/results/flame/final/matched_gene_and_trans_data"
+output_file_genes_and_trans <- "/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/results/flame/final_select/matched_gene_and_trans_data"
 
 ######### HERE PUT THE SNAKEMAKE PARAMS SO ALL THAT IS ABOVE THIS PART SHOULD BE TAKEN BY SNAKEMAKE
 ######
@@ -34,8 +34,8 @@ output_file_genes_and_trans <- "/imppc/labs/eclab/ijarne/0_Recerca/6_Run2/result
 
 ##### Prepare the script to work on
 #### places to save the data
-if(!dir.exists(paths = paste0(place_to_save_the_data,"/final"))) {
-  dir.create(path = paste0(place_to_save_the_data,"/final"))
+if(!dir.exists(paths = paste0(place_to_save_the_data,"/final_select"))) {
+  dir.create(path = paste0(place_to_save_the_data,"/final_select"))
   cat(paste0("Created the final data dir","\n"))
 } else {
   cat(paste0("Didn't need to create the final data dir","\n"))

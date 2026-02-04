@@ -11,11 +11,11 @@ library(IRanges)
 
 #### Constants
 ### exons data
-flame_matched_exons_data <- "/imppc/labs/eclab/ijarne/0_Recerca/6_Run2/results/flame/final/matched_exon_data.tsv" 
+flame_matched_exons_data <- "/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/results/flame/final_select/matched_exon_data.tsv" 
 ### exons data
-flame_matched_genes_and_transcript_data <- "/imppc/labs/eclab/ijarne/0_Recerca/6_Run2/results/flame/final/matched_gene_and_trans_data.tsv" 
+flame_matched_genes_and_transcript_data <- "/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/results/flame/final_select/matched_gene_and_trans_data.tsv" 
 ### final_data_place
-final_data_place <- "/imppc/labs/eclab/ijarne/0_Recerca/6_Run2/results/flame/final/" 
+final_data_place <- "/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/results/flame/final_select/" 
 
 ######### HERE PUT THE SNAKEMAKE PARAMS SO ALL THAT IS ABOVE THIS PART SHOULD BE TAKEN BY SNAKEMAKE
 ######

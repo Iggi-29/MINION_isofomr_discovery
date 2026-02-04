@@ -11,14 +11,14 @@ library(IRanges)
 
 #### Constants
 ### save the data here
-place_to_save_the_data <- "/imppc/labs/eclab/ijarne/0_Recerca/6_Run2/results/flame/"
+place_to_save_the_data <- "/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/results/flame/"
 ### base path for flame results
-flame_base_path_results <- "/imppc/labs/eclab/ijarne/0_Recerca/6_Run2/results/flame" ## here they are the same but it could be different
+flame_base_path_results <- "/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/results/flame" ## here they are the same but it could be different
 ### annotation of the genes
 raw_annotation_gft_file <- "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/gff3_annotations_for_igv/gff3_filtered.gff3" ## MANE!
-raw_annotation_gft_file <- "/imppc/labs/eclab/ijarne/0_Recerca/6_Run2/ref_files/filtered.gff3"
+raw_annotation_gft_file <- "/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/ref_files/filtered_MANE.gff3"
 ### genes to work on
-genes_to_work_on <- "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/config/keep_this.txt"
+genes_to_work_on <- "/imppc/labs/eclab/ijarne/0_Recerca/pipelines/MINION/config/keep_this_ENIGMA.txt"
 
 ######### HERE PUT THE SNAKEMAKE PARAMS SO ALL THAT IS ABOVE THIS PART SHOULD BE TAKEN BY SNAKEMAKE
 ######
@@ -109,8 +109,8 @@ intron_addition <- function(gtf_df) {
 
 ##### Prepare the script to work on
 #### places to save the data
-if(!dir.exists(paths = paste0(place_to_save_the_data,"/final"))) {
-  dir.create(path = paste0(place_to_save_the_data,"/final"))
+if(!dir.exists(paths = paste0(place_to_save_the_data,"/final_select"))) { ##OJO
+  dir.create(path = paste0(place_to_save_the_data,"/final_select")) ##OJO
   cat(paste0("Created the final data dir","\n"))
 } else {
   cat(paste0("Didn't need to create the final data dir","\n"))
@@ -353,7 +353,7 @@ matching_all_df <- do.call(rbind, matching_all)
 rownames(matching_all_df) <- NULL
 
 write.table(x = matching_all_df, 
-            file = "/imppc/labs/eclab/ijarne/0_Recerca/6_Run2/results/flame/final/raw_matched_df.txt", 
+            file = "/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/results/flame/final_select/raw_matched_df.txt", 
             row.names = FALSE, col.names = TRUE, sep = "\t", quote = FALSE)
 
 #### Select the best match per flameID
@@ -395,7 +395,7 @@ matching_all_df_filterer <- matching_all_df %>%
   dplyr::ungroup()
 
 write.table(x = matching_all_df_filterer, 
-            file = "/imppc/labs/eclab/ijarne/0_Recerca/6_Run2/results/flame/final/matching_scores.txt", 
+            file = "/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/results/flame/final_select/matching_scores.txt", 
             row.names = FALSE, col.names = TRUE, sep = "\t", quote = FALSE)
 
 
@@ -407,11 +407,11 @@ matching_final_df <- matching_all_df %>%
   dplyr::rename(reff_transcript = reff_trans_now)
 
 write.table(x = matching_final_df, 
-            file = "/imppc/labs/eclab/ijarne/0_Recerca/6_Run2/results/flame/final/matching_to_annotate.txt", 
+            file = "/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/results/flame/final_select/matching_to_annotate.txt", 
             row.names = FALSE, col.names = TRUE, sep = "\t", quote = FALSE)
 
 openxlsx::write.xlsx(x = raw_annotation_gtf,
-                     file = "/imppc/labs/eclab/ijarne/0_Recerca/6_Run2/results/flame/final/annotation_of_transcripts.xlsx")
+                     file = "/imppc/labs/eclab/ijarne/0_Recerca/5_MINION_ENIGMA2/results/flame/final_select/annotation_of_transcripts.xlsx")
 
 
 

@@ -4,14 +4,14 @@
 # Execute from the current workig dir
 #$ -cwd
 # Name for the script in the queuing system
-#$ -N ENIGMA
+#$ -N Run11
 # In order to load the environment variables and your path
 # You can either use this or do a : source /etc/profile
 #$ -V
 # You can redirect the error output to a specific file
-#$ -e ENIGMA.err
+#$ -e Run11.err
 # You can redirect the output to a specific file
-#$ -o ENIGMA.log
+#$ -o Run11.log
 #$ -pe smp 20
 #$ -q d12imppc  # los nodos nuevos!
 #$ -l h_vmem=9G

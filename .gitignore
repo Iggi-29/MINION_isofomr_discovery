@@ -20,3 +20,5 @@ gff3_annotations_for_igv/*.gff3
 dag.pdf
 cluster_errs/*
 cluster_logs/*
+MINION_Isoforms.sh
+config/config.yaml

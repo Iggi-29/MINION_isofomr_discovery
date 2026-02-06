@@ -68,12 +68,12 @@ flame_config = config["flame_config"]
 colors = config["colors"]
 
 #### Include the rules of the analysis
-include: "Prepare_data.smk"
-include: "File_concatenation.smk"
-include: "QC_report_generation.smk"
-include: "Transcriptome_Alignment.smk"
-include: "flair.smk"
-include: "flame.smk"
+include: "./rules/Prepare_data.smk"
+include: "./rules/File_concatenation.smk"
+include: "./rules/QC_report_generation.smk"
+include: "./rules/Transcriptome_Alignment.smk"
+include: "./rules/flair.smk"
+include: "./rules/flame.smk"
 
 ### rules
 rule all:
